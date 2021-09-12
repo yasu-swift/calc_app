@@ -17,6 +17,7 @@ Route::get('/', function () {
     return view('welcome');
     
 });
+
 Route::get('/route/hello', function () {
 return '<h1>計算アプリ</h1>';
 });
