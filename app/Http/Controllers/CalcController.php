@@ -4,16 +4,16 @@ namespace App\Http\Controllers;
 
 class CalcController extends Controller
 {
-    public function con($a, $b, $c,)
+    public function con($num1, $operator, $num2)
 {
-    if ($b == 'addition') {
-        $answer = $a + $c;
-    } elseif ($b =='subtraction'){
-        $answer = $a - $c;
-    } elseif ($b == 'multiplication'){
-        $answer = $a * $c;
-    } elseif ($b == 'division'){
-        $answer = $a / $c;
+    if ($operator == 'addition') {
+        $answer = $num1 + $num2;
+    } elseif ($operator =='subtraction'){
+        $answer = $num1 - $num2;
+    } elseif ($operator == 'multiplication'){
+        $answer = $num1 * $num2;
+    } elseif ($operator == 'division'){
+        $answer = $num1 / $num2;
     } else {
         $answer = '計算できません';
     }
